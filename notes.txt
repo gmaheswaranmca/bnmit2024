@@ -1,5 +1,6 @@
 learning resources: 
-
+	https://cassandra.apache.org/doc/4.0/
+	
 Design RDBMS tables based on conceptual desing using given ER diagrams.
 
 Solution:
