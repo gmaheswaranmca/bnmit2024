@@ -1,0 +1,27 @@
+Installation of cassandra:
+
+Prerequisites: 
+	1. Docker Desktop to be installed 
+			Docker Desktop, docker dameon, docker cli 
+	2. Having subscription or account in the docker hub 
+			
+
+Follow the following docker commands to get cassandra to get installed 	
+Step 1:
+	$ docker login 
+		# prompts username password for docker hub 
+		# login successful message 
+Step 2:
+	$ docker pull cassandra:latest
+        # downloads the cassandra latest version from docker hub 
+
+Step 3:
+	$ docker run --name cassandra_bnmit cassandra:latest
+        # builds the container named "cassandra_bnmit" from the downloaded image 
+            cassandra:latest 
+If "cassandra_bnmit" container is not running, 
+goto Docker Desktop see the play button (run cmd) to run.
+
+Step 4: To start the CQL shell 
+	$ docker exec -it cassandra_bnmit cqlsh
+	
